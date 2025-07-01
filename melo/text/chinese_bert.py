@@ -10,7 +10,7 @@ local_path = "./bert/chinese-roberta-wwm-ext-large"
 tokenizers = {}
 models = {}
 
-def get_bert_feature(text, word2ph, device=None, model_id='hfl/chinese-roberta-wwm-ext-large'):
+def get_bert_feature(text, word2ph, device=None, model_id='/models/chinese-roberta-wwm-ext-large'):
     if model_id not in models:
         models[model_id] = AutoModelForMaskedLM.from_pretrained(
             model_id
