@@ -60,3 +60,19 @@ This library is under MIT License, which means it is free for both commercial an
 ## Acknowledgements
 
 This implementation is based on [TTS](https://github.com/coqui-ai/TTS), [VITS](https://github.com/jaywalnut310/vits), [VITS2](https://github.com/daniilrobnikov/vits2) and [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2). We appreciate their awesome work.
+
+
+
+# Docker  Install
+```
+docker run -it -p 8880:5000 --gpus all --mount type=bind,source=/media/verachen/4C9C026E9C02533E/models,target=/models --mount type=bind,source=/home/verachen/nltk_data,target=/usr/local/nltk_data verachen/melotts:0.0.2
+```
+## melo models
+```
+bert-base-japanese-v3
+bert-base-multilingual-uncased
+bert-base-uncased
+chinese-roberta-wwm-ext-large
+MeloTTS-Chinese/
+MeloTTS-Japanese
+```
