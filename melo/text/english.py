@@ -185,7 +185,7 @@ def text_normalize(text):
     text = expand_abbreviations(text)
     return text
 
-model_id = 'bert-base-uncased'
+model_id = '/models/bert-base-uncased'
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 def g2p_old(text):
     tokenized = tokenizer.tokenize(text)
