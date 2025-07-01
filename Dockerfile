@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install -e .
+RUN pip install torch==2.2.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 RUN python -m unidic download
-RUN python melo/init_downloads.py
+# RUN python melo/init_downloads.py
 
-CMD ["python", "./melo/app.py", "--host", "0.0.0.0", "--port", "8888"]
+CMD ["python", "./app.py", "--host", "0.0.0.0", "--port", "5000"]
