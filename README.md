@@ -76,3 +76,12 @@ chinese-roberta-wwm-ext-large
 MeloTTS-Chinese/
 MeloTTS-Japanese
 ```
+
+# Start
+```bash
+docker pull harbor.bwgdi.com/library/melotts:0.0.2
+
+docker run -d --restart always -p 8880:5000 --gpus all --mount type=bind,source=/media/verachen/4C9C026E9C02533E/models,target=/models --mount type=bind,source=/home/verachen/nltk_data,target=/usr/local/nltk_data harbor.bwgdi.com/library/melotts:0.0.2
+
+```
+
