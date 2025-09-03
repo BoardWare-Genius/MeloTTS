@@ -63,10 +63,6 @@ This implementation is based on [TTS](https://github.com/coqui-ai/TTS), [VITS](h
 
 
 
-# Docker  Install
-```
-docker run -it -p 8880:5000 --gpus all --mount type=bind,source=/media/verachen/4C9C026E9C02533E/models,target=/models --mount type=bind,source=/home/verachen/nltk_data,target=/usr/local/nltk_data verachen/melotts:0.0.2
-```
 ## melo models
 ```
 bert-base-japanese-v3
