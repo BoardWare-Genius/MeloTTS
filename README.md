@@ -81,3 +81,16 @@ docker run -d --restart always -p 8880:5000 --gpus all --mount type=bind,source=
 
 ```
 
+# Use
+```
+curl --location 'http://localhost:8880/convert/tts' \
+--header 'Content-Type: application/json' \
+--data '{
+    "text": "你好,你是谁",
+    "speaker_id": "ZH",
+    "language": "ZH",
+    "speed": 1.0
+  }'
+```
+
+
