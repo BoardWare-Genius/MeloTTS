@@ -1,6 +1,6 @@
 name: Build container
 env:
-  VERSION: 0.0.2
+  VERSION: 0.0.3
   REGISTRY: https://harbor.bwgdi.com
   REGISTRY_NAME: harbor.bwgdi.com
 on:

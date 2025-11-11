@@ -11,4 +11,4 @@ RUN pip install torch==2.2.0 torchaudio==2.2.0 --index-url https://download.pyto
 RUN python -m unidic download
 # RUN python melo/init_downloads.py
 
-CMD ["python", "./app.py", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["python", "./app2.py", "--host", "0.0.0.0", "--port", "5000"]

@@ -93,4 +93,24 @@ curl --location 'http://localhost:8880/convert/tts' \
   }'
 ```
 
+## 📦 MeloTTS Version
 
+| Version | Date       | Summary                         |
+|---------|------------|---------------------------------|
+| 0.0.3   | 2025-11-11 | Support concurrent |
+| 0.0.2   | 2025-09-08 | Initial Release |
+
+### 🔄 Version Details
+
+#### 🎉 0.0.3 – *2025-11-11*
+
+- ✅ **New Features**
+  - Support concurrent
+
+#### 🎉 0.0.2 – *2025-09-08*
+
+- ✅ **Core Features**
+  - Initial Release
+
+
+---
